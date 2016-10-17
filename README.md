@@ -19,7 +19,11 @@ Run script by running the following command from this directory
 		python anagrams.py url1 url2 etc
 	
 
-where url1, url2, etc are links to Wikipedia pages. User can provide 1 or more links. 
+where url1, url2, etc are links to Wikipedia pages. User can provide 1 or more links. For example: 
+
+
+		python anagrams.py en.wikipedia.org/wiki/Deadpool https://en.wikipedia.org/wiki/El_Modena_High_School https://en.wikipedia.org/wiki/Colin_Kaepernick
+
 
 #### Files: 
 **resources.py**
