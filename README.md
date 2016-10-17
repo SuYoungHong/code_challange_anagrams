@@ -22,8 +22,9 @@ Run script by running the following command from this directory
 where url1, url2, etc are links to Wikipedia pages. User can provide 1 or more links. For example: 
 
 
-		python anagrams.py en.wikipedia.org/wiki/Deadpool https://en.wikipedia.org/wiki/El_Modena_High_School https://en.wikipedia.org/wiki/Colin_Kaepernick
+		python anagrams.py https://en.wikipedia.org/wiki/Deadpool https://en.wikipedia.org/wiki/El_Modena_High_School https://en.wikipedia.org/wiki/Colin_Kaepernick
 
+*Note* url should start with "https://" otherwise script won't run. 
 
 #### Files: 
 **resources.py**

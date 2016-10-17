@@ -25,12 +25,16 @@ urls = sys.argv[1:]
 # check if links are valid
 bad_links = []
 for link in urls:
-	req = requests.get(link)
-	if req.status_code != 202:
+	try:
+		req = requests.get(link)
+		if req.status_code < 200 and req.status_code > 300:
+			bad_links.append(link)
+			urls.remove(link)
+	except requests.exceptions.MissingSchema:
 		bad_links.append(link)
 		urls.remove(link)
 if bad_links != []:
-	message = ",".join(bad_links)
+	message = ", ".join(bad_links)
 	print "These links don't seem seem to work: " + message
 
 
