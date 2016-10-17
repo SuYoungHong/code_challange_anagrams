@@ -1,0 +1,7 @@
+#ignore all these files
+*.idea
+*.iml
+*.DS_Store
+*.ipynb_checkpoints
+*.pyc
+
