@@ -1,7 +1,7 @@
 ## Script for Checking Anagrams on Wikipedia Page
-Author: Su-Young Hong
-Date: 10/16/2016
-Email: suyoung.hong@gmail.com
+* Author: Su-Young Hong
+* Date: 10/16/2016
+* Email: suyoung.hong@gmail.com
 
 #### Description: 
 Python script which checks the content of one or more Wikipedia pages (user supplied) and outputs all anagrams found through standard output. 

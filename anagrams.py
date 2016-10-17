@@ -30,7 +30,7 @@ for link in urls:
 		if req.status_code < 200 and req.status_code > 300:
 			bad_links.append(link)
 			urls.remove(link)
-	except requests.exceptions.MissingSchema:
+	except:
 		bad_links.append(link)
 		urls.remove(link)
 if bad_links != []:
