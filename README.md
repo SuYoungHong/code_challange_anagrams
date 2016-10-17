@@ -37,6 +37,7 @@ where url1, url2, etc are links to Wikipedia pages. User can provide 1 or more l
 **Author's Notes / Improvements**
 * This script just checks the body of the Wikipedia page, not the rest. 
 * Tokenizing the textstring is pretty imperfect right now, wierd unicode stuff, like "\u03c0", "\u2026", "\u0027" isn't handled in any special way (wait, are they all \uxxxx format???) so I regex out all non-numerics other then "'" and "-". There could be orphaned bits of words that are messing things up. Also, it won't handle stuff like umlauts well because of this, so the more... international a page is, the worse this script will perform. 
+* If you have suggestions for improvement or comment on the code, please email me!
 
 
 
