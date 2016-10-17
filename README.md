@@ -17,13 +17,11 @@ Run script by running the following command from this directory
 
 `python anagrams.py url1 url2 etc`
 
+where url1, url2, etc are links to Wikipedia pages. User can provide 1 or more links. 
 
 #### Files: 
 resources.py
-	* Module which includes various functions for use in the main script (anagrams.py)
+* Module which includes various functions for use in the main script (anagrams.py)
 
 anagrams.py
-	* Script which 
-
-
-
+* Script which checks for anagrams from Wikipedia page (this is the file you run!!!)
