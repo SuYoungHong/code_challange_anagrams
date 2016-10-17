@@ -16,7 +16,7 @@ Script is written in Python 2.7.10 and requires the following packages:
 Run script by running the following command from this directory
 
 	
-		`python anagrams.py url1 url2 etc`
+		python anagrams.py url1 url2 etc
 	
 
 where url1, url2, etc are links to Wikipedia pages. User can provide 1 or more links. 
