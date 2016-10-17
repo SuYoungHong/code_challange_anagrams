@@ -43,11 +43,12 @@ def clean_and_tokenize(generators_list):
 		for text in page:
 			cleaned = text.replace("\u2019", "'")
 			cleaned = cleaned.replace("\'", "'")
-			cleaned = re.sub(r"[^A-Za-z'-]", " ", cleaned)
 			cleaned = cleaned.lower()
 			cleaned = cleaned.split(" ")
+			cleaned = map(lambda x: re.sub(r"[^A-Za-z'-]", "", x), cleaned)
 			cleaned = map(lambda x: x.strip("-"), cleaned)
 			cleaned = map(lambda x: x.strip("'"), cleaned)
+			cleaned = map(lambda x: x.strip(" "), cleaned)
 			words_set.update(cleaned)
 	return words_set
 
