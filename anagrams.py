@@ -34,13 +34,16 @@ for link in urls:
 		bad_links.append(link)
 		urls.remove(link)
 if bad_links != []:
-	message = ", ".join(bad_links)
-	print "These links don't seem seem to work: " + message
+	print "These links don't seem seem to work:"
+	for i in bad_links:
+		print '\t' + i
 
 
 # if there are valid links, give status message
 if urls != []:
-	print "Checking anagrams for: " + ",".join(urls)
+	print "Checking anagrams for:"
+	for i in urls:
+		print '\t' + i
 
 
 # download each link and collect text (via generator) 
